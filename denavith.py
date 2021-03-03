@@ -12,6 +12,18 @@ from sympy.physics.vector import init_vprinting
 init_vprinting(use_latex='mathjax', pretty_print=False)
 from sympy.physics.mechanics import dynamicsymbols
 
+#Definir metodos y variables para evitar llamar nuevamente a la liberia tras cargado el modulo.
+
+#Agregar constante pi, a la libraria.
+pi = sp.pi
+
+def simbolic(sym):
+    #Regresa las variables simbolicas.
+    #Recive un string como parametro.
+    return dynamicsymbols(sym)
+
+
+#Definir las variables simbolicas utilizadas por el modulo.
 theta1, theta2, l1, l2, theta, alpha, a, d = dynamicsymbols('theta1 theta2 l1 l2 theta alpha a d')
 
 #Definimos las matrices de rotacion y traslacion correspondientes
@@ -40,6 +52,7 @@ rx = sp.Matrix([[1,0,0,0],
                [0,sp.sin(alpha),sp.cos(alpha),0],
                [0,0,0,1]])
 
+
 #Ecuacion matricial para obtener DH
 DH = rz*tz*tx*rx
 
@@ -49,7 +62,7 @@ def get_origin_dh():
     """
     return DH
 
-class solver:
+class robot:
     #Array al que se le van agregando las articulaciones
     articulation_array = []
 
@@ -95,7 +108,7 @@ class solver:
         T = 1
         for i in range(len(self.articulation_array)):
             T = T * self.articulation_array[i] 
-            print(T)
-
+         
+        #Regresamos el resultado
         return T
 
