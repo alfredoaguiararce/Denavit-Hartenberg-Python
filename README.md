@@ -59,10 +59,10 @@ robot_tipo2 = dh.robot()
 #Robot 1.
 
 #articulacion 0.
-robot_tipo1.add_articulation(q1 ,l1,0,dh.pi/2)
+robot_tipo1.add_articulation(q1 , l1, 0, dh.pi/2)
 
 #articulacion 1.
-robot_tipo1.add_articulation(q2 ,0,0,-dh.pi/2)
+robot_tipo1.add_articulation(q2 , 0, 0, -dh.pi/2)
 
 #articulacion 2.
 robot_tipo1.add_articulation(0 ,q3,0,0)
@@ -86,7 +86,7 @@ robot_tipo1.solve()
 | `simbolic()`      | Regresa las variables simbolicas establecidas a travez de una cadena de texto.       |
 | `robot()`   | Crea un nuevo objeto que posee las funciones necesarias para el analisis matematico.    |
 
-**Funciones del objeto robot(). **
+### Funciones del objeto robot(). 
 
 |Nombre de la funcion | Descripcion          |
 | ------------- | ------------------------------ |
