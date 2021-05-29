@@ -20,7 +20,6 @@ En la libraria se hace referencia en especial a cuatro parametros *(theta, d, a,
 
 ###	Como utilizarlo
 
-:tw-26a0: :tw-26a0::tw-26a0: :tw-26a0:
 
 **Es importante que sepas que para agregar angulos debes hacerlo en radianes, es decir:**
 
@@ -28,7 +27,6 @@ En la libraria se hace referencia en especial a cuatro parametros *(theta, d, a,
 **-	pi / 2 = 90°**
 **-	2 pi = 360°**
 
-:tw-26a0: :tw-26a0::tw-26a0: :tw-26a0:
 
 Importa la libreria en tu proyeto.
 
