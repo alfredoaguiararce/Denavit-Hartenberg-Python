@@ -11,6 +11,8 @@ Antonio Barrientos Cruz · Mcgraw-Hill / Interamericana De España, S.A.*
 ###	Consideraciones
 En la libraria se hace referencia en especial a cuatro parametros *(theta, d, a, alpha).* estos hacen referencia a:
 
+![image](https://user-images.githubusercontent.com/67090401/120074099-866ede80-c058-11eb-9290-46cbdbbd2348.png)
+
 -	**theta** = angulo de rotacion para la 'n-esima' articulacion en el eje Z.	(rotacion en z).
 -	**d** = movimiento del punto de referencia a travez del eje Z. (Traslacion en z).
 -	**a** = movimiento del punto de referencia a travez del eje X. (Traslacion en x).
@@ -65,7 +67,7 @@ robot_tipo1.add_articulation(q1 , l1, 0, dh.pi/2)
 robot_tipo1.add_articulation(q2 , 0, 0, -dh.pi/2)
 
 #articulacion 2.
-robot_tipo1.add_articulation(0 ,q3,0,0)
+robot_tipo1.add_articulation(0 , q3, 0, 0)
 
 #NOTA:
 #Puedes obtener el valor de Pi directamente de la libreria.
