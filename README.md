@@ -21,20 +21,20 @@ En la libraria se hace referencia en especial a cuatro parametros *(theta, d, a,
 ###	Como utilizarlo
 
 
-**Es importante que sepas que para agregar angulos debes hacerlo en radianes, es decir:**
+**NOTA : Es importante que sepas que para agregar angulos debes hacerlo en radianes, es decir:**
 
 **-	pi = 180°**
 **-	pi / 2 = 90°**
 **-	2 pi = 360°**
 
 
-Importa la libreria en tu proyeto.
+1. Importa la libreria en tu proyeto.
 
 ```python
 import denavith 
 ```
 
-Crea las variables simbolicas necesarias.
+2. Crea las variables simbolicas necesarias.
 
 ```python
 #Declara las variables simbolicas de esta manera.
@@ -43,7 +43,7 @@ q1,q2,q3,l1 = dh.simbolic('q1 q2 q3 l1')
 #Imprimimos las variables declaradas.
 q1,q2,q3,l1
 ```
-Crea un modelo por cada robot que desees evaluar.
+3. Crea un modelo por cada robot que desees evaluar.
 
 ```python
 #Creamos un objeto para el robot de este modelo
@@ -53,7 +53,7 @@ robot_tipo1 = dh.robot()
 robot_tipo2 = dh.robot()
 ```
 
-Agrega articulaciones a tu robot.
+4. Agrega articulaciones al objeto del modelo.
 
 ```python
 #Robot 1.
@@ -71,7 +71,7 @@ robot_tipo1.add_articulation(0 ,q3,0,0)
 #Puedes obtener el valor de Pi directamente de la libreria.
 ```
 
-Resuelve la matriz de rotacion.
+5. Resuelve la matriz de rotacion.
 
 ```python
 #Mostramos el resultado.
